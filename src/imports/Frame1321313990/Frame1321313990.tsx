@@ -84,7 +84,7 @@ function ButtonLarge() {
 
 function ButtonLarge1() {
   return (
-    <div className="-translate-x-1/2 absolute h-[60px] left-[calc(50%+0.5px)] rounded-[32px] top-[1930px] w-[129px]" data-name="Button Large">
+    <div className="-translate-x-1/2 absolute h-[60px] left-[calc(50%+0.5px)] rounded-[32px] top-[1860px] sm:top-[1930px] w-[129px]" data-name="Button Large">
       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[60px] left-1/2 top-1/2 w-[129px]" data-name="Button Large 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgButtonLarge1} />
       </div>
@@ -95,12 +95,12 @@ function ButtonLarge1() {
 
 export default function Frame2() {
   return (
-    <div className="bg-[#FAFAFA] min-h-[2228px] pb-[80px] relative w-full">
-      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-medium leading-[21.6px] left-1/2 not-italic text-[#BFBFBF] text-[18px] text-center top-[2105px] w-[392px]">
+    <div className="bg-[#FAFAFA] min-h-[2158px] pb-[80px] relative sm:min-h-[2228px] w-full">
+      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-medium leading-[21.6px] left-1/2 not-italic text-[#BFBFBF] text-[18px] text-center top-[2035px] sm:top-[2105px] w-[392px]">
         <p className="mb-0">Crafted by Aarxn</p>
         <p>Ho Chi Minh City, Vietnam</p>
       </div>
-      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-semibold leading-[21.6px] left-1/2 not-italic text-[#393939] text-[18px] text-center top-[1749px] w-[392px]">
+      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-semibold leading-[21.6px] left-1/2 not-italic text-[#393939] text-[18px] text-center top-[1679px] sm:top-[1749px] w-[392px]">
         <p className="mb-0">Everyday makes running feel less lonely.</p>
         <p>Track your runs, save your milestones, and share progress with your crew.</p>
       </div>
@@ -108,7 +108,7 @@ export default function Frame2() {
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-tl-[32px] rounded-tr-[32px] size-full" src={imgGroup51} />
       </div>
       <Frame1 />
-      <div className="-translate-x-1/2 absolute h-[739.428px] left-[calc(50%-0.3px)] top-[894px] w-[357.39px]" data-name="iPhone-16-Pro 1">
+      <div className="-translate-x-1/2 absolute h-[739.428px] left-[calc(50%-0.3px)] top-[824px] sm:top-[894px] w-[357.39px]" data-name="iPhone-16-Pro 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgIPhone16Pro1} />
       </div>
       <ButtonLarge />
