@@ -64,7 +64,7 @@ function Frame() {
 
 function Frame1() {
   return (
-    <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[28px] items-center left-1/2 sm:left-[calc(50%-16px)] top-[348px] w-[195.998px]">
+    <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[28px] items-center left-1/2 top-[348px] w-[195.998px]">
       <Group />
       <Frame />
     </div>
@@ -73,7 +73,7 @@ function Frame1() {
 
 function ButtonLarge() {
   return (
-    <div className="-translate-x-1/2 absolute h-[60px] left-[calc(50%+0.5px)] rounded-[32px] top-[66px] w-[129px]" data-name="Button Large">
+    <div className="-translate-x-1/2 absolute h-[60px] left-1/2 rounded-[32px] top-[66px] w-[129px]" data-name="Button Large">
       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[60px] left-1/2 top-1/2 w-[129px]" data-name="Button Large 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgButtonLarge1} />
       </div>
@@ -84,7 +84,7 @@ function ButtonLarge() {
 
 function ButtonLarge1() {
   return (
-    <div className="-translate-x-1/2 absolute h-[60px] left-[calc(50%+0.5px)] rounded-[32px] top-[1810px] sm:top-[1930px] w-[129px]" data-name="Button Large">
+    <div className="-translate-x-1/2 absolute h-[60px] left-1/2 lg:top-[1930px] rounded-[32px] sm:top-[1810px] top-[1810px] w-[129px]" data-name="Button Large">
       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[60px] left-1/2 top-1/2 w-[129px]" data-name="Button Large 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgButtonLarge1} />
       </div>
@@ -99,8 +99,8 @@ type Frame2Props = {
 
 export default function Frame2({ onPrivacyPolicyClick }: Frame2Props) {
   return (
-    <div className="bg-[#FAFAFA] min-h-[2130px] pb-[80px] relative sm:min-h-[2250px] w-full">
-      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-medium leading-[21.6px] left-1/2 not-italic text-[#BFBFBF] text-[18px] text-center top-[1985px] sm:top-[2105px] w-[calc(100%-64px)] sm:w-[392px]">
+    <div className="bg-[#FAFAFA] min-h-[2130px] pb-[80px] relative sm:min-h-[2130px] lg:min-h-[2250px] w-full">
+      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-medium leading-[21.6px] left-1/2 lg:top-[2105px] not-italic text-[#BFBFBF] text-[18px] text-center top-[1985px] sm:top-[1985px] w-[calc(100%-64px)] sm:w-[392px]">
         <p className="mb-0">Crafted by Aarxn</p>
         <p>Ho Chi Minh City, Vietnam</p>
         <button
@@ -111,7 +111,7 @@ export default function Frame2({ onPrivacyPolicyClick }: Frame2Props) {
           Privacy Policy
         </button>
       </div>
-      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-semibold leading-[21.6px] left-1/2 not-italic text-[#393939] text-[18px] text-center top-[1629px] sm:top-[1749px] w-[calc(100%-64px)] sm:w-[392px]">
+      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-semibold leading-[21.6px] left-1/2 lg:top-[1749px] not-italic text-[#393939] text-[18px] text-center top-[1629px] sm:top-[1629px] w-[calc(100%-64px)] sm:w-[392px]">
         <p className="mb-0">Everyday makes running feel less lonely.</p>
         <p>Track your runs, save your milestones, and share progress with your crew.</p>
       </div>
@@ -119,7 +119,7 @@ export default function Frame2({ onPrivacyPolicyClick }: Frame2Props) {
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-tl-[32px] rounded-tr-[32px] size-full" src={imgGroup51} />
       </div>
       <Frame1 />
-      <div className="-translate-x-1/2 absolute aspect-[357.39/739.428] h-auto left-[calc(50%-0.3px)] sm:h-[739.428px] top-[774px] sm:top-[894px] w-[calc(100%-64px)] sm:w-[357.39px]" data-name="iPhone-16-Pro 1">
+      <div className="-translate-x-1/2 absolute aspect-[357.39/739.428] h-auto left-1/2 lg:top-[894px] sm:h-[739.428px] top-[774px] sm:top-[774px] w-[calc(100%-64px)] sm:w-[357.39px]" data-name="iPhone-16-Pro 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgIPhone16Pro1} />
       </div>
       <ButtonLarge />
