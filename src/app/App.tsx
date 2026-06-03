@@ -3,18 +3,20 @@ import HomePage from "./pages/HomePage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import { routes } from "./routes";
 
+const getRoute = () => window.location.hash.replace(/^#/, "") || routes.home;
+
 export default function App() {
-  const [path, setPath] = useState(() => window.location.pathname);
+  const [path, setPath] = useState(getRoute);
 
   useEffect(() => {
-    const handlePopState = () => setPath(window.location.pathname);
+    const handleHashChange = () => setPath(getRoute());
 
-    window.addEventListener("popstate", handlePopState);
-    return () => window.removeEventListener("popstate", handlePopState);
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
   const navigate = (nextPath: string) => {
-    window.history.pushState(null, "", nextPath);
+    window.location.hash = nextPath;
     setPath(nextPath);
     window.scrollTo({ top: 0 });
   };
