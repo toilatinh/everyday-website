@@ -1,5 +1,27 @@
-import Frame1321313990 from "../imports/Frame1321313990/Frame1321313990";
+import { useEffect, useState } from "react";
+import HomePage from "./pages/HomePage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import { routes } from "./routes";
 
 export default function App() {
-  return <Frame1321313990 />;
+  const [path, setPath] = useState(() => window.location.pathname);
+
+  useEffect(() => {
+    const handlePopState = () => setPath(window.location.pathname);
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  const navigate = (nextPath: string) => {
+    window.history.pushState(null, "", nextPath);
+    setPath(nextPath);
+    window.scrollTo({ top: 0 });
+  };
+
+  if (path === routes.privacyPolicy) {
+    return <PrivacyPolicyPage onBack={() => navigate(routes.home)} />;
+  }
+
+  return <HomePage onNavigatePrivacyPolicy={() => navigate(routes.privacyPolicy)} />;
 }

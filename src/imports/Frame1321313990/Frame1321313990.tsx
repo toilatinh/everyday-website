@@ -93,12 +93,23 @@ function ButtonLarge1() {
   );
 }
 
-export default function Frame2() {
+type Frame2Props = {
+  onPrivacyPolicyClick?: () => void;
+};
+
+export default function Frame2({ onPrivacyPolicyClick }: Frame2Props) {
   return (
-    <div className="bg-[#FAFAFA] min-h-[2108px] pb-[80px] relative sm:min-h-[2228px] w-full">
+    <div className="bg-[#FAFAFA] min-h-[2130px] pb-[80px] relative sm:min-h-[2250px] w-full">
       <div className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-medium leading-[21.6px] left-1/2 not-italic text-[#BFBFBF] text-[18px] text-center top-[1985px] sm:top-[2105px] w-[calc(100%-64px)] sm:w-[392px]">
         <p className="mb-0">Crafted by Aarxn</p>
         <p>Ho Chi Minh City, Vietnam</p>
+        <button
+          className="cursor-pointer font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-medium leading-[21.6px] mt-[32px] text-[#BFBFBF] text-[18px]"
+          onClick={onPrivacyPolicyClick}
+          type="button"
+        >
+          Privacy Policy
+        </button>
       </div>
       <div className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-semibold leading-[21.6px] left-1/2 not-italic text-[#393939] text-[18px] text-center top-[1629px] sm:top-[1749px] w-[calc(100%-64px)] sm:w-[392px]">
         <p className="mb-0">Everyday makes running feel less lonely.</p>
