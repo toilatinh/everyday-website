@@ -184,4 +184,8 @@ export const privacyPolicyBlocks: PrivacyPolicyBlock[] = [
     type: "paragraph",
     text: "If you have any questions, requests to access your data, or support inquiries regarding this Privacy Policy, please contact us using the \"Feedback for us\" channel integrated directly within the Settings menu of the Everyday application.",
   },
+  {
+    type: "paragraph",
+    text: "For additional support, please contact:\nEmail: meetwaaron@gmail.com",
+  },
 ];

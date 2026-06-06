@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import HomePage from "./pages/HomePage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import TermsOfServicePage from "./pages/TermsOfServicePage";
 import { routes } from "./routes";
 
 const getRoute = () => window.location.hash.replace(/^#/, "") || routes.home;
@@ -25,5 +26,14 @@ export default function App() {
     return <PrivacyPolicyPage onBack={() => navigate(routes.home)} />;
   }
 
-  return <HomePage onNavigatePrivacyPolicy={() => navigate(routes.privacyPolicy)} />;
+  if (path === routes.termsOfService) {
+    return <TermsOfServicePage onBack={() => navigate(routes.home)} />;
+  }
+
+  return (
+    <HomePage
+      onNavigatePrivacyPolicy={() => navigate(routes.privacyPolicy)}
+      onNavigateTermsOfService={() => navigate(routes.termsOfService)}
+    />
+  );
 }

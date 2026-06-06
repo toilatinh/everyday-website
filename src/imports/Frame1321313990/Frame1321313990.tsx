@@ -95,21 +95,31 @@ function ButtonLarge1() {
 
 type Frame2Props = {
   onPrivacyPolicyClick?: () => void;
+  onTermsOfServiceClick?: () => void;
 };
 
-export default function Frame2({ onPrivacyPolicyClick }: Frame2Props) {
+export default function Frame2({ onPrivacyPolicyClick, onTermsOfServiceClick }: Frame2Props) {
   return (
     <div className="bg-[#FAFAFA] min-h-[2130px] pb-[80px] relative sm:min-h-[2130px] lg:min-h-[2250px] w-full">
       <div className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-medium leading-[21.6px] left-1/2 lg:top-[2105px] not-italic text-[#BFBFBF] text-[18px] text-center top-[1985px] sm:top-[1985px] w-[calc(100%-64px)] sm:w-[392px]">
         <p className="mb-0">Crafted by Aarxn</p>
         <p>Ho Chi Minh City, Vietnam</p>
-        <button
-          className="cursor-pointer font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-medium leading-[21.6px] mt-[32px] text-[#BFBFBF] text-[18px]"
-          onClick={onPrivacyPolicyClick}
-          type="button"
-        >
-          Privacy Policy
-        </button>
+        <div className="flex gap-[24px] justify-center mt-[32px]">
+          <button
+            className="cursor-pointer font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-medium leading-[21.6px] text-[#BFBFBF] text-[18px]"
+            onClick={onTermsOfServiceClick}
+            type="button"
+          >
+            Terms of Service
+          </button>
+          <button
+            className="cursor-pointer font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-medium leading-[21.6px] text-[#BFBFBF] text-[18px]"
+            onClick={onPrivacyPolicyClick}
+            type="button"
+          >
+            Privacy Policy
+          </button>
+        </div>
       </div>
       <div className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-semibold leading-[21.6px] left-1/2 lg:top-[1749px] not-italic text-[#393939] text-[18px] text-center top-[1629px] sm:top-[1629px] w-[calc(100%-64px)] sm:w-[392px]">
         <p className="mb-0">Everyday makes running feel less lonely.</p>
