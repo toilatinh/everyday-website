@@ -73,23 +73,35 @@ function Frame1() {
 
 function ButtonLarge() {
   return (
-    <div className="-translate-x-1/2 absolute h-[60px] left-1/2 rounded-[32px] top-[66px] w-[129px]" data-name="Button Large">
+    <a
+      className="-translate-x-1/2 absolute h-[60px] left-1/2 rounded-[32px] top-[66px] w-[129px]"
+      data-name="Button Large"
+      href="https://apps.apple.com/us/app/everyday-run-with-your-crew/id6772132769"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[60px] left-1/2 top-1/2 w-[129px]" data-name="Button Large 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgButtonLarge1} />
       </div>
       <p className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-semibold leading-[18px] left-1/2 not-italic text-[18px] text-center text-white top-[calc(50%-9px)] whitespace-nowrap">Download</p>
-    </div>
+    </a>
   );
 }
 
 function ButtonLarge1() {
   return (
-    <div className="-translate-x-1/2 absolute h-[60px] left-1/2 lg:top-[1930px] rounded-[32px] sm:top-[1810px] top-[1810px] w-[129px]" data-name="Button Large">
+    <a
+      className="-translate-x-1/2 absolute h-[60px] left-1/2 lg:top-[1930px] rounded-[32px] sm:top-[1810px] top-[1810px] w-[129px]"
+      data-name="Button Large"
+      href="https://apps.apple.com/us/app/everyday-run-with-your-crew/id6772132769"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[60px] left-1/2 top-1/2 w-[129px]" data-name="Button Large 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgButtonLarge1} />
       </div>
       <p className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Rounded',ui-rounded,system-ui,sans-serif] font-semibold leading-[18px] left-1/2 not-italic text-[18px] text-center text-white top-[calc(50%-9px)] whitespace-nowrap">Download</p>
-    </div>
+    </a>
   );
 }
 
