@@ -21,6 +21,25 @@
       <meta name="twitter:description" content="Everyday makes running feel less lonely. Track your runs, save milestones, and share progress with your crew." />
       <meta name="twitter:image" content="cover-preview.png" />
       <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-91MK24DBB4"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-91MK24DBB4', { send_page_view: false });
+
+        function trackPageView() {
+          var path = window.location.hash.replace(/^#/, '') || '/';
+          gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: window.location.origin + path,
+            page_path: path
+          });
+        }
+
+        trackPageView();
+        window.addEventListener('hashchange', trackPageView);
+      </script>
       
       <script type="module" crossorigin src="/assets/index-7B5mhxrJ.js"></script>
       <link rel="stylesheet" crossorigin href="/assets/index-CakIlCkS.css">

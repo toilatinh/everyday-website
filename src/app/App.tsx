@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import HomePage from "./pages/HomePage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsOfServicePage from "./pages/TermsOfServicePage";
+import { trackPageView } from "./lib/analytics";
 import { routes } from "./routes";
 
 const getRoute = () => window.location.hash.replace(/^#/, "") || routes.home;
@@ -15,6 +16,10 @@ export default function App() {
     window.addEventListener("hashchange", handleHashChange);
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
+
+  useEffect(() => {
+    trackPageView(path);
+  }, [path]);
 
   const navigate = (nextPath: string) => {
     window.location.hash = nextPath;
